@@ -1,8 +1,7 @@
 package com.example.inventory.dto.events;
 
-import java.util.List;
-
 import com.example.inventory.dto.requests.InventoryCreationRequestDTO;
+import com.example.util.dto.events.ExceptionEvent;
 import com.fasterxml.jackson.annotation.JsonAutoDetect;
 import com.fasterxml.jackson.annotation.JsonAutoDetect.Visibility;
 import com.fasterxml.jackson.annotation.JsonInclude;

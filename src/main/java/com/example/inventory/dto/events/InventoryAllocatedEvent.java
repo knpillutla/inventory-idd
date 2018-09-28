@@ -1,6 +1,7 @@
 package com.example.inventory.dto.events;
 
 import com.example.inventory.dto.responses.InventoryDTO;
+import com.example.util.dto.events.BaseEvent;
 import com.fasterxml.jackson.annotation.JsonAutoDetect;
 import com.fasterxml.jackson.annotation.JsonAutoDetect.Visibility;
 import com.fasterxml.jackson.annotation.JsonInclude;
