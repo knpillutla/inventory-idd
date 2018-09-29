@@ -29,7 +29,6 @@ public class InventoryDTO  implements Serializable{
 	Integer qty;
 	Integer statCode;
 	String ilpn;
-	String waveNbr;
 	String orderNbr;
 	String packageNbr;
 	String transitContainerNbr;
