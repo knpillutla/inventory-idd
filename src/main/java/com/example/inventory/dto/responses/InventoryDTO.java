@@ -1,7 +1,7 @@
 package com.example.inventory.dto.responses;
 
 import java.io.Serializable;
-import java.util.Date;
+import java.time.LocalDateTime;
 
 import com.fasterxml.jackson.annotation.JsonAutoDetect;
 import com.fasterxml.jackson.annotation.JsonAutoDetect.Visibility;
@@ -37,7 +37,7 @@ public class InventoryDTO  implements Serializable{
 	String trackByLPN;
 	String refField1;
 	String refField2;
-	Date updatedDttm;
+	LocalDateTime updatedDttm;
 	String updatedBy;
 	String batchNbr;
 	String userId;
