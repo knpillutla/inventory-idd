@@ -11,15 +11,16 @@ import lombok.NoArgsConstructor;
 @JsonInclude(JsonInclude.Include.NON_DEFAULT)
 @NoArgsConstructor
 @Data
-public class ASNUPCReceivedEvent extends BaseEvent{
-	private static String EVENT_NAME = "ASNUPCReceivedEvent";
+public class UPCReceivedEvent extends BaseEvent{
+	private static String EVENT_NAME = "UPCReceivedEvent";
 	String busName;
 	Integer locnNbr;
 	String busUnit;
 	String itemBrcd;
 	Integer qty;
+	String locnBrcd;
 	
-	public ASNUPCReceivedEvent(String busName, Integer locnNbr,
+	public UPCReceivedEvent(String busName, Integer locnNbr,
 			String busUnit, String itemBrcd, Integer qty) {
 		super(EVENT_NAME);
 		this.busName = busName;
