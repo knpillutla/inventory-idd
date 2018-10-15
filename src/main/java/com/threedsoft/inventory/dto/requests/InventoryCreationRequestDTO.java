@@ -1,8 +1,8 @@
-package com.example.inventory.dto.requests;
+package com.threedsoft.inventory.dto.requests;
 
-import com.example.util.dto.BaseDTO;
 import com.fasterxml.jackson.annotation.JsonAutoDetect;
 import com.fasterxml.jackson.annotation.JsonAutoDetect.Visibility;
+import com.threedsoft.util.dto.WMSRequestDTO;
 import com.fasterxml.jackson.annotation.JsonInclude;
 
 import lombok.AllArgsConstructor;
@@ -14,8 +14,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Data
 @AllArgsConstructor
-public class InventoryCreationRequestDTO extends BaseDTO{
-	public String eventName="InventoryCreationRequest";
+public class InventoryCreationRequestDTO extends WMSRequestDTO{
 	public String busName;
 	public Integer locnNbr;
 	public String busUnit;

@@ -1,8 +1,8 @@
-package com.example.inventory.dto.requests;
+package com.threedsoft.inventory.dto.requests;
 
-import com.example.util.dto.BaseDTO;
 import com.fasterxml.jackson.annotation.JsonAutoDetect;
 import com.fasterxml.jackson.annotation.JsonAutoDetect.Visibility;
+import com.threedsoft.util.dto.WMSRequestDTO;
 import com.fasterxml.jackson.annotation.JsonInclude;
 
 import lombok.Data;
@@ -12,7 +12,7 @@ import lombok.NoArgsConstructor;
 @JsonInclude(JsonInclude.Include.NON_DEFAULT)
 @NoArgsConstructor
 @Data
-public class InventoryAllocationRequestDTO  extends BaseDTO{
+public class InventoryAllocationRequestDTO  extends WMSRequestDTO{
 	public Long orderLineId;
 	public Long orderId;
 	public Integer orderLineNbr;
