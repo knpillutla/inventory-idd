@@ -14,17 +14,13 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Data
 @AllArgsConstructor
-public class InventoryCreationRequestDTO extends WMSRequestDTO{
-	public String busName;
-	public Integer locnNbr;
-	public String busUnit;
-	public String company;
-	public String division;
+public class InventoryUpdateRequestDTO extends WMSRequestDTO{
+	public Long id;
 	public String locnBrcd;
 	public String itemBrcd;
 	public Integer qty;
 	public String ilpn;
 	public String trackByLPN;
-	public String userId;
 	public String locked;
+	public String userId;
 }
